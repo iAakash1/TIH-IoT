@@ -1,3 +1,15 @@
+# PlantVLM: training only on expert-checked captions (5 Aug 2026)
+
+**What is here:** Qwen2.5-VL-7B LoRA trained on 150 hand-written, expert-revised captions (30 images, 6 diseases; `1stJuly/Revised_captions.xlsx`). Run folder: `runs/run_002_fold0`.
+
+**Results:** Best at epoch 3 (validation loss 1.823). The model named the right disease for 2 of 6 validation images (chance 1 of 6; the human reference ceiling was 7 of 30).
+
+**Finding:** 30 images are far too few: high-quality captions need many more images to train a VLM.
+
+---
+
+*Original README:*
+
 # PlantVLM
 
 Fine-tunes **Qwen2.5-VL-7B-Instruct** with LoRA on **150 manually validated captions**

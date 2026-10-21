@@ -1,3 +1,15 @@
+# PlantDx (15–18 May 2026)
+
+**What is here:** The April pipeline restructured into `core/`, `utils/`, `scripts/`, `configs/` and a Streamlit app, trained on 15 PlantVillage classes (tomato, potato, pepper).
+
+**Results:** 98.00% accuracy, macro-F1 0.9777, BLEU-4 0.386, severity R² 0.966 (`outputs/evaluations/report.json`). Model: `outputs/checkpoints/best`.
+
+**Finding:** Same accuracy level as April with cleaner, reusable code; published on GitHub in June.
+
+---
+
+*Original README:*
+
 # 🌿 PlantDx — Plant Disease Detection via Vision-Language Model
 
 Fine-tuned **Qwen2.5-VL-7B-Instruct** on the PlantVillage dataset (15 disease classes, ~20,600 images across tomato, potato, and pepper bell). Produces structured diagnostic captions identifying plant species, disease condition, severity, causal pathogen, and visual symptoms.

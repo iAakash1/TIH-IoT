@@ -1,3 +1,29 @@
+# 04 · July – September 2026: knowledge-grounded PlantDx and the TIH tomato benchmark
+
+**In short:** this folder is the team's [iAakash1/experimentation](https://github.com/iAakash1/experimentation)
+repository at its latest branch, `refactor/professional-research-layout` (commit 66a40bc), which already contains the commits of every other branch. It holds two pieces of work:
+
+1. **July 2026: knowledge-grounded PlantDx (Apple Silicon / MLX).** Training captions are built from a cited
+   Disease Knowledge Base instead of being written by an AI, and Qwen2.5-VL-7B is then fine-tuned with QLoRA.
+   Tomato: 7.3% → **93.7%**. Mango: 17.5% → **82.0%**. These runs were on a Mac, so their results, configs and
+   confusion matrices are in the experimentation repo:
+   [research/mlx_pipeline](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline).
+2. **August – September 2026: TIH tomato dataset (NVIDIA GPU).** Qwen2.5-VL-7B fine-tuned with 4-bit QLoRA to
+   name one of 11 classes (diseases, pests, healthy leaf/fruit) from the TIH `Tomato_12thAug26` images.
+
+| Run | Date | Test accuracy | Macro-F1 | Model | Report |
+|---|---|---:|---:|---|---|
+| strong (LoRA r32, 392 px) | 15 Sep 2026 | 87.98% | 0.8991 | `checkpoints/tih_tomato_qwen_qlora_strong` | `reports/tih_tomato_qwen_qlora_strong/test_finetuned/metrics.json` |
+| moreaccurate (LoRA r64, 532 px) | 16 Sep 2026 | **92.76%** | 0.9378 | `checkpoints/tih_tomato_moreaccurate` | `reports/tih_tomato_moreaccurate/test_finetuned/metrics.json` |
+| moreaccurate, cross-domain (176 images from another source) | 17 Sep 2026 | 69.32% | 0.7195 | same | `reports/tih_tomato_moreaccurate_external/metrics.json` |
+
+This TIH work, including the cross-domain benchmark, is the basis of the paper **Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**, accepted at ICAIN 2026 (Springer LNNS) on 1 October 2026.
+
+The drop on the outside images shows the model is sensitive to new photo conditions. Late Blight was the
+hardest class. `RESULTS.md` has the full per-class tables. The original repository README follows.
+
+---
+
 # PlantDx Experimentation
 
 PlantDx is a research repository for reproducible vision-language model experiments in plant

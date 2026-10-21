@@ -1,3 +1,15 @@
+# Production pipeline code (13 Apr 2026)
+
+**What is here:** The modular version of the April pipeline: `models/loader.py`, `utils/` (CLIP out-of-distribution check, parser, plant-mismatch validator, GradCAM), `pipeline.py`, `app.py`. Same code as [kharulkamaaksha/Crop_Disease_VLM](https://github.com/kharulkamaaksha/Crop_Disease_VLM).
+
+**Results:** Uses the 98.50% Qwen2.5-VL adapter; non-leaf photos are rejected by CLIP (similarity threshold 0.27).
+
+**Finding:** Safety gates before and after the model avoid confident wrong answers on bad inputs.
+
+---
+
+*Original README:*
+
 # PlantVillage — Production Pipeline (`latest_changes/`)
 
 A modular, production-grade plant disease diagnosis system built on top of
