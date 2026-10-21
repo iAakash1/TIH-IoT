@@ -17,7 +17,7 @@ repository at its latest branch, `refactor/professional-research-layout` (commit
 | moreaccurate (LoRA r64, 532 px) | 16 Sep 2026 | **92.76%** | 0.9378 | `checkpoints/tih_tomato_moreaccurate` | `reports/tih_tomato_moreaccurate/test_finetuned/metrics.json` |
 | moreaccurate, cross-domain (176 images from another source) | 17 Sep 2026 | 69.32% | 0.7195 | same | `reports/tih_tomato_moreaccurate_external/metrics.json` |
 
-This TIH work, including the cross-domain benchmark, is the basis of the paper **Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**, accepted at ICAIN 2026 (Springer LNNS) on 1 October 2026.
+This TIH work, including the cross-domain benchmark, is the basis of the paper **Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**, accepted at ICAIN 2026 (Springer LNNS) on 1 October 2026; registration and fees were completed on 21 October 2026.
 
 The drop on the outside images shows the model is sensitive to new photo conditions. Late Blight was the
 hardest class. `RESULTS.md` has the full per-class tables. The original repository README follows.

@@ -26,7 +26,7 @@ All rows use the protocol of `qwen/04_evaluate.py`, so they can be compared dire
 | LLaVA-1.6-Mistral-7B, LoRA (Mar) | 2.00% | 0.0151 | 0.0006 | `../evaluation_reports_oct2026/llava_v16` |
 | Qwen2.5-VL-7B, no fine-tuning | 8.50% | 0.0800 | 0.0018 | `../evaluation_reports_oct2026/qwen_zeroshot` |
 | Florence-2-base-ft, no fine-tuning | 0.00% | 0.0000 | 0.0016 | `../evaluation_reports_oct2026/florence_zeroshot` |
-| BLIP-2 OPT-2.7B, 1-epoch re-run (Jun) | 0.00% | 0.0000 | 0.0819 | `tp/evaluation_report.json` |
+| BLIP-2 OPT-2.7B, 1-epoch re-run (Jun) | 89.00% | 0.8948 | 0.0865 | `../evaluation_reports_oct2026/blip2_june` (its own June script recorded 0%: `tp/evaluation_report.json`) |
 
 PlantVLM (August) is a different task: it uses 6 validation images and hand-written captions, and the
 fine-tuned model named the correct disease for 2 of 6 images (chance is 1 in 6).

@@ -29,7 +29,7 @@ git clone https://github.com/iAakash1/TIH-IoT.git
 | Jul 2026 | Knowledge-grounded PlantDx with MLX QLoRA: tomato 93.7%, mango 82.0% | [experimentation/research/mlx_pipeline](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline) |
 | Aug 2026 | PlantVLM on 150 expert captions; TIH tomato dataset received; SigLIP/OpenCLIP prototype | [03_…/newpipe](03_mar_aug2026_vlm_plantvillage/newpipe), [05_…](05_aug2026_siglip_openclip_tih_prototype) |
 | Sep 2026 | TIH private tomato dataset (11 classes): Qwen2.5-VL QLoRA runs (92.76% test); cross-domain benchmark (69.32%) | [04_…/experiments/tih_tomato_qwen](04_jul_sep2026_plantdx_mlx_and_tih_tomato/experiments/tih_tomato_qwen) |
-| Oct 2026 | 1 Oct: ICAIN 2026 paper accepted. Every saved model re-evaluated with its original split | [evaluation_reports_oct2026](evaluation_reports_oct2026) |
+| Oct 2026 | 1 Oct: ICAIN 2026 paper accepted; 21 Oct: registration and fees completed. Every saved model re-evaluated with its original split | [evaluation_reports_oct2026](evaluation_reports_oct2026) |
 
 ## Month-wise record
 
@@ -44,7 +44,7 @@ Each month (December 2025 to September 2026) has its own folder in [`month_wise/
 
 | Crop | Model | Eval set | Accuracy | Macro-F1 | Report |
 |---|---|---|---:|---:|---|
-| Tomato | Custom CNN 32x32 (TF/Keras) | tomato test, 2,411 | 98.51% | 0.9830 | [report](evaluation_reports_oct2026/keras/custom_cnn_best_tomato_test) |
+| Tomato | Custom CNN 32x32 (TF/Keras) | tomato test, 2,411 (overlaps its training images) | 98.51% | 0.9830 | [report](evaluation_reports_oct2026/keras/custom_cnn_best_tomato_test) |
 | Tomato | MobileNetV2 (Keras) | held-out val, 3,198 | 90.90% | 0.8939 | [report](evaluation_reports_oct2026/keras/mobilenetv2_keras) |
 | Tomato | EfficientNetB3 (Keras) | held-out val, 3,198 | 93.59% | 0.9275 | [report](evaluation_reports_oct2026/keras/efficientnetb3_keras) |
 | Tomato | ConvNeXt-Tiny (Keras) | held-out val, 3,198 | 96.15% | 0.9507 | [report](evaluation_reports_oct2026/keras/convnext_tiny_keras) |
@@ -53,7 +53,7 @@ Each month (December 2025 to September 2026) has its own folder in [`month_wise/
 | Tomato | BLIP-2 OPT-2.7B LoRA (Mar) | PlantVillage val, 200 | 89.00% | 0.8928 | [report](evaluation_reports_oct2026/blip2_march) |
 | Tomato | Florence-2-base-ft zero-shot | PlantVillage val, 200 | 0.00% | 0.0000 | [report](evaluation_reports_oct2026/florence_zeroshot) |
 | Tomato | Qwen2.5-VL-7B zero-shot | PlantVillage val, 200 | 8.50% | 0.0800 | [report](evaluation_reports_oct2026/qwen_zeroshot) |
-| Tomato | BLIP-2 OPT-2.7B LoRA, 1-epoch re-run (Jun) | PlantVillage val, 200 | 0.00% | 0.0000 | [report](03_mar_aug2026_vlm_plantvillage/tp/evaluation_report.json) |
+| Tomato | BLIP-2 OPT-2.7B LoRA, 1-epoch re-run (Jun) | PlantVillage val, 200 | 89.00% | 0.8948 | [report](evaluation_reports_oct2026/blip2_june) |
 | Tomato | Qwen2.5-VL-7B LoRA r32 (Apr) | PlantVillage val, 200 | 98.50% | 0.9827 | [report](03_mar_aug2026_vlm_plantvillage/qwen/evaluation_report.json) |
 | Tomato | Qwen2.5-VL-7B LoRA, PlantDx 15-class (May) | PlantVillage val, 200 | 98.00% | 0.9777 | [report](03_mar_aug2026_vlm_plantvillage/PlantDx/outputs/evaluations/report.json) |
 | Tomato | Qwen2.5-VL-7B-4bit QLoRA, knowledge-grounded (MLX) | test, 910 | 93.70% | 0.919 | [results](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline) |
@@ -70,7 +70,7 @@ Each month (December 2025 to September 2026) has its own folder in [`month_wise/
 
 ## Publication
 
-**Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**. Submission 953, accepted on 1 October 2026 for the Proceedings of ICAIN 2026 (Springer LNNS series; indexed in
+**Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**. Submission 953, accepted on 1 October 2026 (registration and fees completed on 21 October 2026) for the Proceedings of ICAIN 2026 (Springer LNNS series; indexed in
 zbMATH, Scopus, DBLP), among the top 20% of reviewed papers. Based on the TIH tomato work in
 [`04_jul_sep2026_plantdx_mlx_and_tih_tomato`](04_jul_sep2026_plantdx_mlx_and_tih_tomato).
 
@@ -103,7 +103,7 @@ Original development history lives in the source repositories:
 4. Z. Zhao et al., *Image Fusion via Vision-Language Model (FILM)*, ICML 2024. [arXiv:2402.02235](https://arxiv.org/abs/2402.02235)
 5. H. Liu et al., *Visual Instruction Tuning (LLaVA)*, NeurIPS 2023. [arXiv:2304.08485](https://arxiv.org/abs/2304.08485)
 6. J. Li et al., *BLIP-2*, ICML 2023. [arXiv:2301.12597](https://arxiv.org/abs/2301.12597)
-7. J. Bai et al., *Qwen2.5-VL Technical Report*, 2025. [arXiv:2502.13923](https://arxiv.org/abs/2502.13923)
+7. S. Bai et al., *Qwen2.5-VL Technical Report*, 2025. [arXiv:2502.13923](https://arxiv.org/abs/2502.13923)
 8. P. Panchal et al., *Deep Learning-Driven Image Captioning: Progress Through Transformers and Large Language Models*, PLOS ONE, 2026. [doi:10.1371/journal.pone.0345012](https://doi.org/10.1371/journal.pone.0345012)
 
 ## Notes

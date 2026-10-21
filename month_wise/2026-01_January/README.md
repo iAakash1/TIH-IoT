@@ -2,7 +2,7 @@
 
 ## Work done
 
-- MobileNetV2, EfficientNetB3 and ConvNeXt-Tiny transfer learning in Keras (4–6 Jan, retrained 22 Jan).
+- MobileNetV2, EfficientNetB3 and ConvNeXt-Tiny transfer learning in Keras (4–6 Jan).
 - ConvNeXt-Tiny in PyTorch on the RTX 4500 GPU (8 Jan).
 - Crop validation (green-pixel ratio + embedding similarity) and the full validate → preprocess → predict pipeline (21–27 Jan).
 - SoyNet soybean healthy-vs-diseased training on the VDI with the provided pipeline, Keras and PyTorch runs (27 Jan).
@@ -12,7 +12,7 @@
 - ConvNeXt-Tiny (PyTorch) was the best CNN: 99.92% test accuracy, macro-F1 0.9991.
 - Keras held-out validation: ConvNeXt 96.15%, EfficientNetB3 93.59%, MobileNetV2 90.90%.
 - Soybean: Keras ResNet50 95.16%; PyTorch EfficientNetB3 93.93%. The metrics' positive class is Healthy; the PyTorch models find every healthy leaf but over-predict it.
-- PlantVillage is near-solved for CNNs on clean lab images, which motivated the move to VLMs and field data.
+- PlantVillage is near-solved for CNNs on clean lab images, which motivated the move to VLMs and harder datasets.
 
 ## Results
 

@@ -8,7 +8,7 @@
 
 ## Findings
 
-- The 32×32 custom CNN reached 98.51% on the tomato test split (macro-F1 0.9830) and 86.77% over all 15 PlantVillage classes.
+- The 32×32 custom CNN reached 98.51% on the tomato test split (macro-F1 0.9830) and 86.77% over all 15 PlantVillage classes; indicative only, because these images largely overlap its training data (its own Mac split could not be rebuilt).
 - The quality checks written this month became the inference gate used in every later pipeline.
 
 ## Results

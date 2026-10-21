@@ -30,11 +30,13 @@ classifiers on PlantVillage tomato leaves (10 classes: 9 diseases + healthy).
 
 | Model | Evaluated on | Accuracy | Macro-F1 |
 |---|---|---:|---:|
-| Custom CNN, 32×32 input | tomato test split, 2,411 images | 98.51% | 0.9830 |
+| Custom CNN, 32×32 input | tomato test split, 2,411 images* | 98.51% | 0.9830 |
 | MobileNetV2 (Keras) | held-out 20% validation, 3,198 images | 90.90% | 0.8939 |
 | EfficientNetB3 (Keras) | same | 93.59% | 0.9275 |
 | ConvNeXt-Tiny (Keras) | same | 96.15% | 0.9507 |
 | ConvNeXt-Tiny (PyTorch) | test split, 2,411 images | **99.92%** | 0.9991 |
 
+\* Indicative only: the CNN's own 80/20 split was drawn on a Mac and could not be rebuilt, so these test images largely overlap its training data.
+
 PlantVillage photos are clean lab images, so very high accuracy here does not guarantee field performance.
-This is why the later work moved to Vision-Language Models and to the TIH field dataset.
+This is why the later work moved to Vision-Language Models and to the TIH tomato dataset.
