@@ -31,6 +31,15 @@ git clone https://github.com/iAakash1/TIH-IoT.git
 | Sep 2026 | TIH private tomato dataset (11 classes): Qwen2.5-VL QLoRA runs (92.76% test); cross-domain benchmark (69.32%) | [04_…/experiments/tih_tomato_qwen](04_jul_sep2026_plantdx_mlx_and_tih_tomato/experiments/tih_tomato_qwen) |
 | Oct 2026 | 1 Oct: ICAIN 2026 paper accepted. Every saved model re-evaluated with its original split | [evaluation_reports_oct2026](evaluation_reports_oct2026) |
 
+## Month-wise record
+
+Each month (December 2025 to September 2026) has its own folder in [`month_wise/`](month_wise) with a short README
+(work done, findings, results) and that month's evaluation reports:
+[Dec 2025](month_wise/2025-12_December) · [Jan](month_wise/2026-01_January) · [Feb](month_wise/2026-02_February) ·
+[Mar](month_wise/2026-03_March) · [Apr](month_wise/2026-04_April) · [May](month_wise/2026-05_May) ·
+[Jun](month_wise/2026-06_June) · [Jul](month_wise/2026-07_July) · [Aug](month_wise/2026-08_August) ·
+[Sep 2026](month_wise/2026-09_September)
+
 ## Results
 
 | Crop | Model | Eval set | Accuracy | Macro-F1 | Report |
@@ -75,6 +84,7 @@ zbMATH, Scopus, DBLP), among the top 20% of reviewed papers. Based on the TIH to
 | `04_jul_sep2026_plantdx_mlx_and_tih_tomato/` | Knowledge-grounded PlantDx package (`src/plantdx`), configs, `research/`, TIH `checkpoints/`, `reports/`, `experiments/` |
 | `05_aug2026_siglip_openclip_tih_prototype/` | SigLIP / OpenCLIP contrastive pipeline for the TIH dataset |
 | `evaluation_reports_oct2026/` | Re-evaluation of every saved model (`evaluation_report.json`, predictions, confusion matrices) and the scripts that produced them |
+| `month_wise/` | One folder per month: README with work, findings and results, plus that month's evaluation reports |
 | `docs/` | PoCRA reports, PlantDx engineering history, presentations |
 
 Original development history lives in the source repositories:
