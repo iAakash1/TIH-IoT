@@ -9,3 +9,4 @@
 | `presentations/VLM_Crop_Disease_Diagnosis.pptx` | Slide deck on VLM crop-disease diagnosis (April 2026). |
 | `presentations/Plant-Disease-Captioning-with-BLIP-2-LoRA.pdf` | Slide deck on the BLIP-2 + LoRA captioning pipeline (April 2026). |
 | `timeline_verification.md` | Proof that every month in the report matches the file and commit dates of the work (all 20 checks pass). |
+| `vlm_plantvillage_comparison.md` | All PlantVillage VLM models compared on the same 200 images (March – August 2026). |

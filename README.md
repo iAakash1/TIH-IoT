@@ -19,26 +19,22 @@ git clone https://github.com/iAakash1/TIH-IoT.git
 
 | Month | Work | Folder |
 |---|---|---|
-| Dec 2025 | TIH foundation tasks: image operations (package vs scratch), training/inference preprocessing, quality guardrails, CNN theory; custom CNN trained from scratch (29 Dec) | [01_dec2025_jan2026_cnn_baselines](01_dec2025_jan2026_cnn_baselines) |
-| Jan 2026 | Keras transfer learning (MobileNetV2, EfficientNetB3, ConvNeXt-Tiny), PyTorch ConvNeXt-Tiny, crop validation; SoyNet soybean (Keras + PyTorch) on the VDI | [01_…](01_dec2025_jan2026_cnn_baselines), [02_jan2026_soybean_soynet](02_jan2026_soybean_soynet) |
-| Feb 2026 | Video editing for the PoCRA project; attended the AI for Agri conference | – |
-| Mar 2026 | VLM literature study; LLaVA-1.6 and BLIP-2 LoRA fine-tuning on PlantVillage | [03_mar_aug2026_vlm_plantvillage/outputs](03_mar_aug2026_vlm_plantvillage/outputs) |
-| Apr 2026 | Research papers (below); Florence-2 attempt; Qwen2.5-VL-7B LoRA (98.50%); CLIP OOD + GradCAM pipeline | [03_…/qwen](03_mar_aug2026_vlm_plantvillage/qwen) |
-| May 2026 | PlantDx restructured pipeline, 15 PlantVillage classes (98.00%) | [03_…/PlantDx](03_mar_aug2026_vlm_plantvillage/PlantDx) |
-| Jun 2026 | PlantDx code published; BLIP-2 re-run; expert-validated caption set; 7-VLM zero-shot benchmark | [03_…/tp](03_mar_aug2026_vlm_plantvillage/tp) |
-| Jul 2026 | Knowledge-grounded PlantDx with MLX QLoRA: tomato 93.7%, mango 82.0% | [experimentation/research/mlx_pipeline](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline) |
-| Aug 2026 | PlantVLM on 150 expert captions; TIH tomato dataset received; SigLIP/OpenCLIP prototype | [03_…/newpipe](03_mar_aug2026_vlm_plantvillage/newpipe), [05_…](05_aug2026_siglip_openclip_tih_prototype) |
-| Sep 2026 | TIH private tomato dataset (11 classes): Qwen2.5-VL QLoRA runs (92.76% test); cross-domain benchmark (69.32%) | [04_…/experiments/tih_tomato_qwen](04_jul_sep2026_plantdx_mlx_and_tih_tomato/experiments/tih_tomato_qwen) |
+| Dec 2025 | TIH foundation tasks: image operations (package vs scratch), training/inference preprocessing, quality guardrails, CNN theory; custom CNN trained from scratch (29 Dec) | [2025-12_December](2025-12_December) |
+| Jan 2026 | Keras transfer learning (MobileNetV2, EfficientNetB3, ConvNeXt-Tiny), PyTorch ConvNeXt-Tiny, crop validation; SoyNet soybean (Keras + PyTorch) on the VDI | [2026-01_January](2026-01_January) |
+| Feb 2026 | Video editing for the PoCRA project; attended the AI for Agri conference | [2026-02_February](2026-02_February) |
+| Mar 2026 | VLM literature study; LLaVA-1.6 and BLIP-2 LoRA fine-tuning on PlantVillage | [2026-03_March](2026-03_March) |
+| Apr 2026 | Research papers (below); Florence-2 attempt; Qwen2.5-VL-7B LoRA (98.50%); CLIP OOD + GradCAM pipeline | [2026-04_April](2026-04_April) |
+| May 2026 | PlantDx restructured pipeline, 15 PlantVillage classes (98.00%) | [2026-05_May](2026-05_May) |
+| Jun 2026 | PlantDx code published; BLIP-2 re-run; expert-validated caption set; 7-VLM zero-shot benchmark | [2026-06_June](2026-06_June) |
+| Jul 2026 | Knowledge-grounded PlantDx with MLX QLoRA: tomato 93.7%, mango 82.0% | [2026-07_July](2026-07_July) |
+| Aug 2026 | PlantVLM on 150 expert captions; TIH tomato dataset received; SigLIP/OpenCLIP prototype | [2026-08_August](2026-08_August) |
+| Sep 2026 | TIH private tomato dataset (11 classes): Qwen2.5-VL QLoRA runs (92.76% test); cross-domain benchmark (69.32%) | [2026-09_September](2026-09_September) |
 | Oct 2026 | 1 Oct: ICAIN 2026 paper accepted; 21 Oct: registration and fees completed. Every saved model re-evaluated with its original split | [evaluation_reports_oct2026](evaluation_reports_oct2026) |
 
 ## Month-wise record
 
-Each month (December 2025 to September 2026) has its own folder in [`month_wise/`](month_wise) with a short README
-(work done, findings, results) and that month's evaluation reports:
-[Dec 2025](month_wise/2025-12_December) · [Jan](month_wise/2026-01_January) · [Feb](month_wise/2026-02_February) ·
-[Mar](month_wise/2026-03_March) · [Apr](month_wise/2026-04_April) · [May](month_wise/2026-05_May) ·
-[Jun](month_wise/2026-06_June) · [Jul](month_wise/2026-07_July) · [Aug](month_wise/2026-08_August) ·
-[Sep 2026](month_wise/2026-09_September)
+The repository is organised by month. Each folder below holds that month's work, a short README (work done, findings, results) and its evaluation reports:
+[December 2025](2025-12_December) · [January 2026](2026-01_January) · [February 2026](2026-02_February) · [March 2026](2026-03_March) · [April 2026](2026-04_April) · [May 2026](2026-05_May) · [June 2026](2026-06_June) · [July 2026](2026-07_July) · [August 2026](2026-08_August) · [September 2026](2026-09_September)
 
 ## Results
 
@@ -54,38 +50,42 @@ Each month (December 2025 to September 2026) has its own folder in [`month_wise/
 | Tomato | Florence-2-base-ft zero-shot | PlantVillage val, 200 | 0.00% | 0.0000 | [report](evaluation_reports_oct2026/florence_zeroshot) |
 | Tomato | Qwen2.5-VL-7B zero-shot | PlantVillage val, 200 | 8.50% | 0.0800 | [report](evaluation_reports_oct2026/qwen_zeroshot) |
 | Tomato | BLIP-2 OPT-2.7B LoRA, 1-epoch re-run (Jun) | PlantVillage val, 200 | 89.00% | 0.8948 | [report](evaluation_reports_oct2026/blip2_june) |
-| Tomato | Qwen2.5-VL-7B LoRA r32 (Apr) | PlantVillage val, 200 | 98.50% | 0.9827 | [report](03_mar_aug2026_vlm_plantvillage/qwen/evaluation_report.json) |
-| Tomato | Qwen2.5-VL-7B LoRA, PlantDx 15-class (May) | PlantVillage val, 200 | 98.00% | 0.9777 | [report](03_mar_aug2026_vlm_plantvillage/PlantDx/outputs/evaluations/report.json) |
+| Tomato | Qwen2.5-VL-7B LoRA r32 (Apr) | PlantVillage val, 200 | 98.50% | 0.9827 | [report](2026-04_April/qwen/evaluation_report.json) |
+| Tomato | Qwen2.5-VL-7B LoRA, PlantDx 15-class (May) | PlantVillage val, 200 | 98.00% | 0.9777 | [report](2026-05_May/PlantDx/outputs/evaluations/report.json) |
 | Tomato | Qwen2.5-VL-7B-4bit QLoRA, knowledge-grounded (MLX) | test, 910 | 93.70% | 0.919 | [results](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline) |
-| Tomato | PlantVLM, 150 expert captions (Aug) | val, 6 images | 33.3% retrieval | 0.278 | [report](03_mar_aug2026_vlm_plantvillage/newpipe/runs/run_002_fold0/evaluation/val_report.json) |
-| Tomato (TIH) | Qwen2.5-VL-7B QLoRA 'strong' | test, 649 | 87.98% | 0.8991 | [report](04_jul_sep2026_plantdx_mlx_and_tih_tomato/reports/tih_tomato_qwen_qlora_strong/test_finetuned/metrics.json) |
-| Tomato (TIH) | Qwen2.5-VL-7B QLoRA 'moreaccurate' | test, 649 | 92.76% | 0.9378 | [report](04_jul_sep2026_plantdx_mlx_and_tih_tomato/reports/tih_tomato_moreaccurate/test_finetuned/metrics.json) |
-| Tomato (TIH) | 'moreaccurate', external | Dataset/testing, 176 | 69.32% | 0.7195 | [report](04_jul_sep2026_plantdx_mlx_and_tih_tomato/reports/tih_tomato_moreaccurate_external/metrics.json) |
+| Tomato | PlantVLM, 150 expert captions (Aug) | val, 6 images | 33.3% retrieval | 0.278 | [report](2026-08_August/newpipe/runs/run_002_fold0/evaluation/val_report.json) |
+| Tomato (TIH) | Qwen2.5-VL-7B QLoRA 'strong' | test, 649 | 87.98% | 0.8991 | [report](2026-09_September/plantdx_and_tih_tomato/reports/tih_tomato_qwen_qlora_strong/test_finetuned/metrics.json) |
+| Tomato (TIH) | Qwen2.5-VL-7B QLoRA 'moreaccurate' | test, 649 | 92.76% | 0.9378 | [report](2026-09_September/plantdx_and_tih_tomato/reports/tih_tomato_moreaccurate/test_finetuned/metrics.json) |
+| Tomato (TIH) | 'moreaccurate', external | Dataset/testing, 176 | 69.32% | 0.7195 | [report](2026-09_September/plantdx_and_tih_tomato/reports/tih_tomato_moreaccurate_external/metrics.json) |
 | Mango | Qwen2.5-VL-7B-4bit QLoRA (MLX) | test, 200 | 82.00% | 0.811 | [results](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline) |
-| Soybean | ResNet50 (PyTorch) | test, 560 | 91.61% | 0.7814 (Healthy-class F1) | [metrics](02_jan2026_soybean_soynet/results/experiments/resnet50) |
-| Soybean | EfficientNetB3 (PyTorch) | test, 560 | 93.93% | 0.8317 (Healthy-class F1) | [metrics](02_jan2026_soybean_soynet/results/experiments/efficientnet_b3) |
-| Soybean | EfficientNetB0 (PyTorch) | test, 560 | 93.39% | 0.8195 (Healthy-class F1) | [metrics](02_jan2026_soybean_soynet/results/experiments/efficientnet_b0) |
-| Soybean | MobileNetV2 (PyTorch) | test, 560 | 92.50% | 0.8000 (Healthy-class F1) | [metrics](02_jan2026_soybean_soynet/results/experiments/mobilenetv2) |
-| Soybean | ResNet50 (Keras) | test, 558 | 95.16% | 0.8556 (Healthy-class F1) | [report](02_jan2026_soybean_soynet/results/experiments/final_report.md) |
+| Soybean | ResNet50 (PyTorch) | test, 560 | 91.61% | 0.7814 (Healthy-class F1) | [metrics](2026-01_January/soybean_soynet/results/experiments/resnet50) |
+| Soybean | EfficientNetB3 (PyTorch) | test, 560 | 93.93% | 0.8317 (Healthy-class F1) | [metrics](2026-01_January/soybean_soynet/results/experiments/efficientnet_b3) |
+| Soybean | EfficientNetB0 (PyTorch) | test, 560 | 93.39% | 0.8195 (Healthy-class F1) | [metrics](2026-01_January/soybean_soynet/results/experiments/efficientnet_b0) |
+| Soybean | MobileNetV2 (PyTorch) | test, 560 | 92.50% | 0.8000 (Healthy-class F1) | [metrics](2026-01_January/soybean_soynet/results/experiments/mobilenetv2) |
+| Soybean | ResNet50 (Keras) | test, 558 | 95.16% | 0.8556 (Healthy-class F1) | [report](2026-01_January/soybean_soynet/results/experiments/final_report.md) |
 
 ## Publication
 
 **Efficient QLoRA Fine-Tuning of Qwen2.5-VL for Multi-Class Tomato Disease Classification and Cross-Domain Evaluation**. Submission 953, accepted on 1 October 2026 (registration and fees completed on 21 October 2026) for the Proceedings of ICAIN 2026 (Springer LNNS series; indexed in
 zbMATH, Scopus, DBLP), among the top 20% of reviewed papers. Based on the TIH tomato work in
-[`04_jul_sep2026_plantdx_mlx_and_tih_tomato`](04_jul_sep2026_plantdx_mlx_and_tih_tomato).
+[`2026-09_September/plantdx_and_tih_tomato`](2026-09_September/plantdx_and_tih_tomato).
 
 ## Repository layout
 
 | Folder | Contents |
 |---|---|
-| `01_dec2025_jan2026_cnn_baselines/` | `cottoncrop_repo_snapshot/` (preprocessing package, crop validation, Keras TL), `keras_pipeline_kamaaksha/` (CNN + TL models and training code), `pytorch_convnext/` (notebooks, model, `splits/split_70_15_15.csv`) |
-| `02_jan2026_soybean_soynet/` | Keras and PyTorch pipelines, `results/experiments/*` (metrics, histories, Grad-CAM, models), `splits/` |
-| `03_mar_aug2026_vlm_plantvillage/` | `outputs/` (LLaVA, BLIP-2 adapters), `tp/` (BLIP-2 re-run), `florence/`, `qwen/`, `other/`, `latest_changes/`, `PlantDx/`, `newpipe/` (PlantVLM) |
-| `04_jul_sep2026_plantdx_mlx_and_tih_tomato/` | Knowledge-grounded PlantDx package (`src/plantdx`), configs, `research/`, TIH `checkpoints/`, `reports/`, `experiments/` |
-| `05_aug2026_siglip_openclip_tih_prototype/` | SigLIP / OpenCLIP contrastive pipeline for the TIH dataset |
-| `evaluation_reports_oct2026/` | Re-evaluation of every saved model (`evaluation_report.json`, predictions, confusion matrices) and the scripts that produced them |
-| `month_wise/` | One folder per month: README with work, findings and results, plus that month's evaluation reports |
-| `docs/` | PoCRA reports, PlantDx engineering history, presentations |
+| `2025-12_December/` | TIH foundation tasks; custom CNN and Keras pipeline (`keras_pipeline_kamaaksha`) |
+| `2026-01_January/` | `cottoncrop_repo_snapshot` (preprocessing, crop validation, Keras transfer learning), `pytorch_convnext` (with split file), `soybean_soynet` |
+| `2026-02_February/` | PoCRA video editing and the AI for Agri conference (README) |
+| `2026-03_March/` | `outputs` (LLaVA-1.6 and BLIP-2 LoRA adapters) |
+| `2026-04_April/` | `qwen` (Qwen2.5-VL LoRA, 98.50%), `florence`, `other`, `latest_changes` (production pipeline) |
+| `2026-05_May/` | `PlantDx` (15 PlantVillage classes, 98.00%) |
+| `2026-06_June/` | `tp` (BLIP-2 1-epoch re-run) |
+| `2026-07_July/` | `plantdx_mlx_results` (knowledge-grounded MLX results: tomato 93.7%, mango 82.0%) |
+| `2026-08_August/` | `newpipe` (PlantVLM on expert captions), `siglip_openclip_tih_prototype` |
+| `2026-09_September/` | `plantdx_and_tih_tomato` (PlantDx package and TIH tomato QLoRA: code, configs, adapters, reports) |
+| `evaluation_reports_oct2026/` | Re-evaluation of every saved model (reports, predictions, confusion matrices, scripts) |
+| `docs/` | PoCRA reports, PlantDx history, presentations, VLM comparison, timeline verification |
 
 Original development history lives in the source repositories:
 [iAakash1/experimentation](https://github.com/iAakash1/experimentation),

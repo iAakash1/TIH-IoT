@@ -15,6 +15,6 @@ split and preprocessing it was trained with, so each experiment has a complete, 
 | `qwen_zeroshot` | Qwen2.5-VL-7B-Instruct, zero-shot | same 200 | `vlm_eval.py qwen` |
 | `mlx_from_confusion_matrices` | MLX QLoRA tomato and mango (Jul 2026) | counts from the published confusion matrices | - |
 
-The VLM protocol is identical to `03_mar_aug2026_vlm_plantvillage/qwen/04_evaluate.py` (April 2026), so all VLM
+The VLM protocol is identical to `2026-04_April/qwen/04_evaluate.py` (April 2026), so all VLM
 rows are directly comparable with the 98.50% Qwen2.5-VL LoRA result. Each VLM folder also has `predictions.json`
 with the generated text for every image. LLaVA was prompted with each record's own training instruction; the other VLMs used the April evaluation instruction.
