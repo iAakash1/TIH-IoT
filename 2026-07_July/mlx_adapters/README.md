@@ -27,7 +27,7 @@ word "A" (14 of 80 right on the test set). Fifteen different weight files (snaps
 and the one with the highest validation
 macro-F1, iteration 13,200 (92.6%, macro-F1 0.904), was evaluated once on the test set: 90.9% (827 of 910),
 macro-F1 0.877, healthy leaves 67 of 80 right, one answer without a class name. It replaced the final file because
-its test macro-F1 is higher, the rule set before the test run. It is weaker than the final file on spider mites,
+its test macro-F1 is higher, the rule written down before the test result. It is weaker than the final file on spider mites,
 leaf mold, mosaic virus and target spot (F1 0.79–0.85). The mango adapter is the final one of its run and gets 8 of
 25 die back images right (July 1 of 25).
 
