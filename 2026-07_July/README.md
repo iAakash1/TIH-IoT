@@ -35,3 +35,5 @@
 ## Code and models
 
 - [MLX results (experimentation repo)](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline)
+- [`mlx_adapters/`](mlx_adapters/README.md): the tomato and mango adapter weights, retrained on 31 Oct – 1 Nov 2026
+  because the July files were lost (tomato 86.9%, mango 86.0% on the same test sets)

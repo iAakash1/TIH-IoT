@@ -81,7 +81,7 @@ zbMATH, Scopus, DBLP), among the top 20% of reviewed papers. Based on the TIH to
 | `2026-04_April/` | `qwen` (Qwen2.5-VL LoRA, 98.50%), `florence`, `other`, `latest_changes` (production pipeline) |
 | `2026-05_May/` | `PlantDx` (15 PlantVillage classes, 98.00%) |
 | `2026-06_June/` | `tp` (BLIP-2 1-epoch re-run) |
-| `2026-07_July/` | `plantdx_mlx_results` (knowledge-grounded MLX results: tomato 93.7%, mango 82.0%) |
+| `2026-07_July/` | `plantdx_mlx_results` (knowledge-grounded MLX results: tomato 93.7%, mango 82.0%), `mlx_adapters` (the two adapters, retrained Nov 2026) |
 | `2026-08_August/` | `newpipe` (PlantVLM on expert captions), `siglip_openclip_tih_prototype` |
 | `2026-09_September/` | `plantdx_and_tih_tomato` (PlantDx package and TIH tomato QLoRA: code, configs, adapters, reports) |
 | `evaluation_reports_oct2026/` | Re-evaluation of every saved model (reports, predictions, confusion matrices, scripts) |
@@ -112,4 +112,5 @@ Original development history lives in the source repositories:
   Point them at your own dataset copy before running.
 - The knowledge-grounded MLX experiments (tomato and mango, July 2026) ran on an Apple Silicon Mac. Their
   results, confusion matrices and configs are in [iAakash1/experimentation → research/mlx_pipeline](https://github.com/iAakash1/experimentation/tree/refactor/professional-research-layout/research/mlx_pipeline).
+  The July adapter weights were lost; the retrained adapters are in [`2026-07_July/mlx_adapters`](2026-07_July/mlx_adapters/README.md).
 - Intermediate training checkpoints (`checkpoint-*`, `epoch-*`) are omitted; the selected best adapters are included.
